@@ -1,0 +1,19 @@
+# AL symbol packages
+.alpackages/
+
+# AL Test Runner
+.altestrunner/
+
+# Compiled AL packages
+*.app
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
