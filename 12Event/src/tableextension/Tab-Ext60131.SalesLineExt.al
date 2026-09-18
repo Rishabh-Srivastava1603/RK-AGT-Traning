@@ -5,6 +5,7 @@ tableextension 60131 SalesLineExt extends "Sales Line"
         field(60131; FoodDelivery; Text[50])
         {
             Caption = 'Food Delivery';
+
             DataClassification = ToBeClassified;
         }
     }

@@ -8,6 +8,7 @@ pageextension 60131 SalesOrderSubExt extends "Sales Order Subform"
             {
                 Caption = 'Food Delivery';
                 ApplicationArea = all;
+                Editable = False;
             }
         }
     }

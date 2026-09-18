@@ -1,3 +1,11 @@
+/* Problem Statment-
+Add a field (e.g., "Delivery") to Sales Header.
+Auto-copy it to Sales Line.
+Once the order is Released, prevent editing of this field.
+*/
+
+
+
 codeunit 60132 MyCodeunit
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", OnAfterInitHeaderDefaults, '', false, false)]
