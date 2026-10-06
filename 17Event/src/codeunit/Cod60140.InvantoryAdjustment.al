@@ -22,7 +22,9 @@ codeunit 60140 InvantoryAdjustment
         LocationCode := Rec."Location Code";
         RequiredQty := Rec.Quantity;
 
-        // Check inventory location
+
+        if not Item.Get(ItemNo) then
+            exit;
         Item.SetRange("Location Filter", LocationCode); // Apply Location filter
         Item.CalcFields(Inventory);
         AvailableQty := Item.Inventory;
