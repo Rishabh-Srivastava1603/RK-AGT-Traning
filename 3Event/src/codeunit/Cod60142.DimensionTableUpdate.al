@@ -1,3 +1,8 @@
+/*The goal of this task is to ensure that the "Dimension Code" field (which will be a custom field)
+ in the Employee table is always updated based on changes made to the Default Dimension table.
+  This includes insertions and deletions in the Default Dimension table. and  as per changes 
+  move data from Default Dimension "Dimesnion Code" to Custom "Dimension Code.*/
+
 codeunit 60142 DimensionTableUpdate
 {
     [EventSubscriber(ObjectType::Table, Database::"Default Dimension", OnAfterInsertEvent, '', False, False)]
