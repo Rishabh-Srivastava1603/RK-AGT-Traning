@@ -34,8 +34,8 @@ page 60140 "Overdue Invoice Setup"
                 var
                     OverdueInvoiceAndMail: Codeunit OverdueInvoiceAndMail;
                 begin
-                    OverdueInvoiceAndMail.PopulateOverdueInvoices(Rec.StartDate,
-                 Rec.EndDate);
+                    OverdueInvoiceAndMail.PopulateOverdueInvoices(Rec.StartDate, Rec.EndDate);
+                    Page.Run(Page::"Customer Overdue Page");// automatic open page .
                 end;
             }
         }
