@@ -6,7 +6,7 @@ codeunit 60140 TrackingSpecificationUpdate
 
         Reservation: Record "Reservation Entry";
         item: Record Item;
-        ReserveEntry: Codeunit "Create Reserv. Entry";
+
 
 
 
